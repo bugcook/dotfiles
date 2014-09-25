@@ -5,7 +5,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
@@ -36,16 +36,12 @@ filetype plugin indent on    " required
 
 set tabstop=2 shiftwidth=2 expandtab
 
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
 set list
 set listchars=tab:>-
 
+colorscheme grb256
 set cursorcolumn
 set cursorline
-hi CursorLine cterm=NONE ctermbg=236 ctermfg=NONE
-hi CursorColumn cterm=NONE ctermbg=236 ctermfg=NONE
-hi Visual cterm=NONE ctermbg=238 ctermfg=NONE
 
 let g:airline#extensions#tabline#enabled = 0
 set laststatus=2

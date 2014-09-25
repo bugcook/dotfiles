@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/hass/Works/webrtc-room/erizo/build/CMakeFiles'
+let g:netrw_dirhist_2='/Users/hass/Works/bmwebrtc'

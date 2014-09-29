@@ -1,15 +1,36 @@
 .tooltip {
-    background-image: none;
-    border-color: red;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
 
-    background-color: transparent;
-    color: @tooltip_fg_color;
+  background-color: transparent;
+  color: @tooltip_fg_color;
 }
 
 .tooltip * {
-    background-color: transparent;
+  background-color: transparent;
 }
 
+
+TerminalWindow {
+  color: #eee;
+}
+TerminalWindow .notebook tab {
+  border: none;
+  background-color: #222;
+  padding: 7px;
+}
+TerminalWindow .notebook tab:active {
+  background: #111;
+  border: none;
+}
+TerminalWindow .notebook .button,
+TerminalWindow .notebook .button:hover,
+TerminalWindow .notebook .button:active {
+  background: none;
+  -unico-border-gradient: none;
+  -unico-inner-stroke-color: none;
+  box-shadow: none;
+  border: none;
+  text-shadow: none;
+}

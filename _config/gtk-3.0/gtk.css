@@ -13,16 +13,29 @@
 
 
 TerminalWindow {
-  color: #eee;
+  /* color: #eee; */
+  border: none;
+}
+TerminalWindow .notebook {
+  background-image: none;
+  background-color: shade (@dark_bg_color, 1.02);
+  border-radius: 3;
+  padding: 0;
+  border: none;
+
+  -unico-border-gradient: none;
+  -unico-inner-stroke-width: 0;
+  -unico-outer-stroke-width: 0;
 }
 TerminalWindow .notebook tab {
   border: none;
-  background-color: #222;
-  padding: 7px;
+  background-color: #EEE;
+  padding: 7px 6px 6px 6px;
+  font-size: 18px;
 }
 TerminalWindow .notebook tab:active {
-  background: #111;
   border: none;
+  background: #BFE;
 }
 TerminalWindow .notebook .button,
 TerminalWindow .notebook .button:hover,
@@ -33,4 +46,8 @@ TerminalWindow .notebook .button:active {
   box-shadow: none;
   border: none;
   text-shadow: none;
+}
+
+TerminalScreen {
+  -VteTerminal-inner-border: 0;
 }

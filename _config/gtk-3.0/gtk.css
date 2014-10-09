@@ -28,14 +28,16 @@ TerminalWindow .notebook {
   -unico-outer-stroke-width: 0;
 }
 TerminalWindow .notebook tab {
+  border-radius: 0;
+
   border: none;
-  background-color: #EEE;
-  padding: 7px 6px 6px 6px;
+  background-color: #DDD;
+  padding: 7px;
   font-size: 18px;
 }
 TerminalWindow .notebook tab:active {
   border: none;
-  background: #BFE;
+  background: #00cdcd;
 }
 TerminalWindow .notebook .button,
 TerminalWindow .notebook .button:hover,

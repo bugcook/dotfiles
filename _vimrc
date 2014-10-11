@@ -19,6 +19,9 @@ Plugin 'bling/vim-airline'
 " Good vim syntax and indention
 Plugin 'jelera/vim-javascript-syntax'
 
+" Html5 indent and syntax
+Plugin 'othree/html5.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

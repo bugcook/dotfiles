@@ -19,7 +19,7 @@ TerminalWindow {
 TerminalWindow .notebook {
   background-image: none;
   background-color: shade (@dark_bg_color, 1.02);
-  border-radius: 3;
+  border-radius: 0;
   padding: 0;
   border: none;
 
@@ -32,7 +32,7 @@ TerminalWindow .notebook tab {
 
   border: none;
   background-color: #DDD;
-  padding: 7px;
+  padding: 6px;
   font-size: 18px;
 }
 TerminalWindow .notebook tab:active {
@@ -51,5 +51,5 @@ TerminalWindow .notebook .button:active {
 }
 
 TerminalScreen {
-  -VteTerminal-inner-border: 0;
+  -VteTerminal-inner-border: 1;
 }

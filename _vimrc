@@ -39,8 +39,8 @@ filetype plugin indent on    " required
 
 set tabstop=2 shiftwidth=2 expandtab
 
-set list
-set listchars=tab:>-
+" set list
+" set listchars=tab:>-
 
 colorscheme grb256
 set cursorcolumn
@@ -58,5 +58,11 @@ let g:ctrlp_custom_ignore = 'node_modules'
 " Remove trailing spaces on save
 " autocmd BufWritePre * :%s/\s\+$//e
 
+" Wrap lines
+set nowrap
+
 " Open syntax
 syntax on
+
+" Use system clipboard
+set clipboard=unnamedplus

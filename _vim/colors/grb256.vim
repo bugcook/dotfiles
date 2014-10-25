@@ -11,8 +11,8 @@ hi StatusLine ctermbg=darkgrey ctermfg=white
 hi StatusLineNC ctermbg=black ctermfg=lightgrey
 hi VertSplit ctermbg=black ctermfg=lightgrey
 hi LineNr ctermfg=darkgray
-hi CursorLine guifg=NONE guibg=#121212 gui=NONE cterm=NONE ctermbg=236 ctermfg=NONE
-hi CursorColumn cterm=NONE ctermbg=236 ctermfg=NONE
+hi CursorLine guifg=NONE guibg=#121212 gui=NONE cterm=NONE ctermbg=233 ctermfg=NONE
+hi CursorColumn cterm=NONE ctermbg=233 ctermfg=NONE
 hi Function guifg=#FFD2A7 guibg=NONE gui=NONE ctermfg=yellow ctermbg=NONE cterm=NONE
 hi Visual guifg=NONE guibg=#262D51 gui=NONE cterm=NONE ctermbg=238 ctermfg=NONE
 

@@ -1,5 +1,5 @@
 .tooltip {
-  border-radius: 5px;
+  border-radius: 3px;
   border-style: solid;
   border-width: 1px;
 
@@ -29,15 +29,15 @@ TerminalWindow .notebook {
 }
 TerminalWindow .notebook tab {
   border-radius: 0;
-
   border: none;
-  background-color: #DDD;
+  background-color: #BBB;
   padding: 6px;
   font-size: 18px;
 }
 TerminalWindow .notebook tab:active {
   border: none;
-  background: #00cdcd;
+  /* background: #00cdcd; */
+  background-color: #EEE;
 }
 TerminalWindow .notebook .button,
 TerminalWindow .notebook .button:hover,

@@ -23,6 +23,8 @@ hi SpellBad guifg=white guibg=#FF6C60 gui=BOLD ctermfg=16 ctermbg=160 cterm=NONE
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
+hi Search guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=NONE
+
 " ir_black doesn't highlight operators for some reason
 hi Operator guifg=#6699CC guibg=NONE gui=NONE ctermfg=lightblue ctermbg=NONE cterm=NONE
 

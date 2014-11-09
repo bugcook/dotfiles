@@ -12,15 +12,35 @@ Plugin 'gmarik/Vundle.vim'
 
 " CtrlP
 Plugin 'kien/ctrlp.vim'
+let g:ctrlp_working_path_mode = 'a'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = 'node_modules'
+map <C-N> <ESC>:CtrlPBuffer<CR>
 
 " Alternative for powerline
 Plugin 'bling/vim-airline'
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+let g:airline#extensions#tabline#enabled = 0
+set laststatus=2
 
 " Good vim syntax and indention
 Plugin 'jelera/vim-javascript-syntax'
 
 " Html5 indent and syntax
 Plugin 'othree/html5.vim'
+
+" Better css indent
+Bundle "JulesWang/css.vim"
+
+" Marketdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_disabled = 1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,15 +66,6 @@ colorscheme grb256
 set cursorcolumn
 set cursorline
 
-let g:airline#extensions#tabline#enabled = 0
-set laststatus=2
-
-let g:ctrlp_working_path_mode = 'a'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore = 'node_modules'
-
 " Remove trailing spaces on save
 " autocmd BufWritePre * :%s/\s\+$//e
 
@@ -64,5 +75,4 @@ set nowrap
 " Open syntax
 syntax on
 
-" Use system clipboard
-set clipboard=unnamedplus
+set showcmd

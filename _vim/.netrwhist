@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/hass/Works/webrtc-room/erizo/build/CMakeFiles'
 let g:netrw_dirhist_2='/Users/hass/Works/bmwebrtc'
 let g:netrw_dirhist_3='/etc/firefox'
 let g:netrw_dirhist_4='/home/hass/.works'
 let g:netrw_dirhist_5='/home/hass/Desktop'
+let g:netrw_dirhist_6='/media/hass/Repository/Works/glossybox_mp/app/design/frontend/default/modern/template/catalog/product/view'

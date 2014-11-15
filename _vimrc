@@ -13,8 +13,10 @@ Plugin 'gmarik/Vundle.vim'
 " CtrlP
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode = 'a'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*.png,*.jpg,*.jpeg,*.gif
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
+set wildignore+=mage--*,sess_*
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = 'node_modules'
 map <C-N> <ESC>:CtrlPBuffer<CR>

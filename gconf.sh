@@ -5,4 +5,4 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "M+ 1
 dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']"
 
 # Emacs-like keybindings
-gsettings set org.gnome.desktop.interface gtk-key-theme "Emacs"
+# gsettings set org.gnome.desktop.interface gtk-key-theme "Emacs"

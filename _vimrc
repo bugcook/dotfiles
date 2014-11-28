@@ -30,14 +30,15 @@ let g:airline_symbols.space = "\ua0"
 let g:airline#extensions#tabline#enabled = 0
 set laststatus=2
 
-" Good vim syntax and indention
-Plugin 'jelera/vim-javascript-syntax'
-
 " Html5 indent and syntax
 Plugin 'othree/html5.vim'
 
 " Better css indent
-Bundle "JulesWang/css.vim"
+Plugin 'JulesWang/css.vim'
+
+" For javascript
+" Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
 
 " Marketdown
 Plugin 'godlygeek/tabular'

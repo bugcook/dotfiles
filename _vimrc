@@ -10,10 +10,13 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" Theme
+Plugin 'altercation/vim-colors-solarized'
+
 " CtrlP
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode = 'a'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/cache/*,*/tmp/*,*.so,*.swp,*.zip
 set wildignore+=*.png,*.jpg,*.jpeg,*.gif
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
 set wildignore+=mage--*,sess_*
@@ -29,6 +32,12 @@ endif
 let g:airline_symbols.space = "\ua0"
 let g:airline#extensions#tabline#enabled = 0
 set laststatus=2
+
+" Objective C
+Plugin 'b4winckler/vim-objc'
+
+" Json
+" Plugin 'elzr/vim-json'
 
 " Html5 indent and syntax
 Plugin 'othree/html5.vim'
@@ -65,7 +74,19 @@ set tabstop=2 shiftwidth=2 expandtab
 " set list
 " set listchars=tab:>-
 
-colorscheme grb256
+if has('gui_running')
+  set background=dark
+  colorscheme solarized
+  let g:solarized_bold=0
+  set lines=40 columns=80
+  set guioptions-=m  "remove menu bar
+  set guioptions-=T  "remove toolbar
+  set guioptions-=r  "remove right-hand scroll bar
+  set guioptions-=L  "remove left-hand scroll bar
+  set guifont=M+\ 1mn\ light:h12
+else
+  colorscheme grb256
+endif
 set cursorcolumn
 set cursorline
 
@@ -79,3 +100,13 @@ set nowrap
 syntax on
 
 set showcmd
+
+au BufNewFile,BufRead *.tpl :set ft=html
+au BufNewFile,BufRead *.pbxproj :set ft=javascript
+
+" Escape issue
+set timeoutlen=1000 ttimeoutlen=0
+
+" Limit line to 80
+set colorcolumn=81
+let &colorcolumn=join(range(81,999),",")

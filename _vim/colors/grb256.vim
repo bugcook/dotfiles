@@ -11,7 +11,7 @@ hi StatusLine ctermbg=darkgrey ctermfg=white
 hi StatusLineNC ctermbg=black ctermfg=lightgrey
 hi VertSplit ctermbg=black ctermfg=lightgrey
 hi LineNr ctermfg=darkgray
-hi CursorLine guifg=NONE guibg=#121212 gui=NONE cterm=NONE ctermbg=233 ctermfg=NONE
+hi CursorLine cterm=NONE ctermbg=233 ctermfg=NONE
 hi CursorColumn cterm=NONE ctermbg=233 ctermfg=NONE
 hi Function guifg=#FFD2A7 guibg=NONE gui=NONE ctermfg=yellow ctermbg=NONE cterm=NONE
 hi Visual guifg=NONE guibg=#262D51 gui=NONE cterm=NONE ctermbg=238 ctermfg=NONE
@@ -35,3 +35,9 @@ highlight DiffDelete term=reverse cterm=bold ctermbg=lightred ctermfg=16
 
 highlight PmenuSel ctermfg=16 ctermbg=156
 
+highlight ColorColumn ctermbg=233
+
+highlight NonText ctermbg=233 ctermfg=233
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" match OverLength /\%81v.\+/

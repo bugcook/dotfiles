@@ -104,9 +104,13 @@ set showcmd
 au BufNewFile,BufRead *.tpl :set ft=html
 au BufNewFile,BufRead *.pbxproj :set ft=javascript
 
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+
 " Escape issue
 set timeoutlen=1000 ttimeoutlen=0
 
 " Limit line to 80
-set colorcolumn=81
-let &colorcolumn=join(range(81,999),",")
+" set colorcolumn=81
+" let &colorcolumn=join(range(81,999),",")

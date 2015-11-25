@@ -1,0 +1,15 @@
+if [ -n "$BASH_VERSION" ]; then
+  if [ -f "$HOME/.bashrc" ]; then
+    . "$HOME/.bashrc"
+  fi
+  if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+  fi
+fi
+
+if [ -f "/tmp/xmodmap.done" ]; then return; fi
+
+touch /tmp/xmodmap.done
+if [ -s "$HOME/.Xmodmap" ]; then
+  xmodmap $HOME/.Xmodmap
+fi

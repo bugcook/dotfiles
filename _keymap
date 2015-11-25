@@ -1,0 +1,60 @@
+##########################################################################
+# Clear all Keys
+xmodmap -e 'clear control'
+xmodmap -e 'clear mod1'
+xmodmap -e 'clear lock'
+xmodmap -e 'clear mod4'
+xmodmap -e 'clear print'
+
+# Assign CapsLock in TP to Escape
+xmodmap -e "keycode 66 = Escape"
+
+# Assign Control in HHKB to Escape
+
+xmodmap -e 'keycode 37 = Escape'
+
+# Make Alt act like Control
+xmodmap -e 'keycode 64 = Control_L'
+xmodmap -e 'keycode 108 = Control_R'
+
+# Asign Print in TP to Alt_R
+xmodmap -e 'keycode 111 = Alt_R'
+
+# Change Super act as Alt
+xmodmap -e 'keycode 133 = Alt_L'
+xmodmap -e 'keycode 134 = Alt_R'
+
+# Add Control and Alt
+xmodmap -e 'add Control = Control_L'
+xmodmap -e 'add Control = Control_R'
+xmodmap -e 'add Mod1 = Alt_L'
+xmodmap -e 'add Mod1 = Alt_R'
+
+
+##########################################################################
+
+clear control
+clear mod1
+clear lock
+clear mod4
+clear print
+
+keycode 66 = Escape
+
+
+keycode 37 = Escape
+
+keycode 64 = Control_L
+keycode 108 = Control_R
+
+keycode 107 = Alt_R
+
+
+keycode 133 = Alt_L
+keycode 134 = Alt_R
+
+
+add Control = Control_L
+add Control = Control_R
+add Mod1 = Alt_L
+add Mod1 = Alt_R

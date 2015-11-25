@@ -16,12 +16,12 @@ Plugin 'altercation/vim-colors-solarized'
 " CtrlP
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode = 'a'
-set wildignore+=*/cache/*,*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/cache/*,*/tmp/*,*\\tmp\\**,*/vendor/*
 set wildignore+=*.png,*.jpg,*.jpeg,*.gif
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
+set wildignore+=*.swp,*.zip,*.exe,*.gz
 set wildignore+=mage--*,sess_*
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore = 'node_modules'
+let g:ctrlp_custom_ignore = 'build\|node_modules\|third_party'
 map <C-N> <ESC>:CtrlPBuffer<CR>
 
 " Alternative for powerline
@@ -46,8 +46,8 @@ Plugin 'othree/html5.vim'
 Plugin 'JulesWang/css.vim'
 
 " For javascript
-" Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+" Plugin 'jelera/vim-javascript-syntax'
 
 " Marketdown
 Plugin 'godlygeek/tabular'
@@ -112,5 +112,5 @@ set encoding=utf-8
 set timeoutlen=1000 ttimeoutlen=0
 
 " Limit line to 80
-" set colorcolumn=81
-" let &colorcolumn=join(range(81,999),",")
+set colorcolumn=81
+let &colorcolumn=join(range(81,999),",")

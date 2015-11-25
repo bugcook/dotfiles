@@ -12,11 +12,15 @@ SIGNALING_FILE=/tmp/firefox_signaling.log
 set -e
 
 # Signaling logs (SDP):
-export NSPR_LOG_FILE=$SIGNALING_FILE
-export NSPR_LOG_MODULES=signaling:5,mtransport:5,timestamp:1  # signaling and mtransport: 1-9
+# export NSPR_LOG_FILE=$SIGNALING_FILE
+# export NSPR_LOG_MODULES=signaling:5,mtransport:5,timestamp:1  # signaling and mtransport: 1-9
 # ICE/STUN/TURN logs:
-export R_LOG_LEVEL=9
-export R_LOG_DESTINATION=stderr
-export R_LOG_VERBOSE=1  # include the module name generating the message
+# export R_LOG_LEVEL=9
+# export R_LOG_DESTINATION=stderr
+# export R_LOG_VERBOSE=1  # include the module name generating the message
+
+# RTP/RTCP
+export NSPR_LOG_MODULES=webrtc_trace:65535
+export WEBRTC_TRACE_FILE=/tmp/WebRTC-rtp.log
 
 $FIREFOX_EXEC

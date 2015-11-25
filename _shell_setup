@@ -1,0 +1,11 @@
+if [ -z "$B_SH_INCLUDED" ]
+then
+  B_SH_INCLUDED=yes
+  if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+  fi
+
+  if [ -s ~/.Xmodmap ]; then
+    xmodmap ~/.Xmodmap
+  fi
+fi

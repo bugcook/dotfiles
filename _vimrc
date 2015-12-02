@@ -18,7 +18,7 @@ Plugin 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode = 'a'
 set wildignore+=*/cache/*,*/tmp/*,*\\tmp\\**,*/vendor/*
 set wildignore+=*.png,*.jpg,*.jpeg,*.gif
-set wildignore+=*.swp,*.zip,*.exe,*.gz
+set wildignore+=*.swp,*.zip,*.exe,*.gz,*.o
 set wildignore+=mage--*,sess_*
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = 'build\|node_modules\|third_party'
